@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "314979416631",
+    "firebase_url": "https://projectmanager-69328.firebaseio.com",
+    "project_id": "projectmanager-69328",
+    "storage_bucket": "projectmanager-69328.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314979416631:android:e5699e064052178c",
+        "android_client_info": {
+          "package_name": "com.projectmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314979416631-gc77h50umds4hoodj6bqcvjma152neru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projectmanagement",
+            "certificate_hash": "62ae387f6721d7212d29104554269e23a7d41e3f"
+          }
+        },
+        {
+          "client_id": "314979416631-7it72k5pp7b4el740v0fikl0roujqger.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projectmanagement",
+            "certificate_hash": "cd4e6c357169d576b40caa547fe4c50a23eadaf0"
+          }
+        },
+        {
+          "client_id": "314979416631-i1n6b6gkkjrq0at9r7a3eicjn54u3g2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC42Fi-mogS-vl9lxFxkIrbF73GUdOQrgc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314979416631-i1n6b6gkkjrq0at9r7a3eicjn54u3g2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

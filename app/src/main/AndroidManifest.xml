@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projectmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ProjectManager"
+        android:allowBackup="true"
+        android:icon="@drawable/project_mng"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/project_mng"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name="Notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="Notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+         See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/project_mng" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name="login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="login.ForgotPassword"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Notification" />
+        <activity android:name=".User" />
+        <activity android:name=".Inbox" />
+        <activity android:name=".Projects" />
+        <activity android:name=".Tasks"></activity>
+        <activity android:name=".ProfileSetting"/>
+        <activity android:name=".UserDeatils"/>
+        <activity android:name="Admin.AddNotification"/>
+        <activity android:name="Admin.AddProject"/>
+        <activity android:name="Admin.AddTasks"/>
+        <activity android:name="Admin.AddInbox"/>
+    </application>
+
+</manifest>

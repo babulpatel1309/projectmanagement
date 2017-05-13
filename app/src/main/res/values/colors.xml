@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fd5fb3</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="card_background">#ffffff</color>
+    <color name="semiBlue">#cc111433</color>
+    <color name="semiBlack">#cc000000</color>
+    <color name="semiRed">#a27e1f1f</color>
+    <color name="semiYellow">#a2a9a534</color>
+    <color name="semiGreen">#cc26A69A</color>
+    <color name="semiBlue1">#cc1E88E5</color>
+    <color name="semiGray">#cc37474F</color>
+
+
+    <color name="notification">#26A69A</color>
+    <color name="notificationDark">#1e8379</color>
+
+    <color name="projects">#7e1f1f</color>
+    <color name="projectsDark">#4d1414</color>
+
+    <color name="users">#a9a534</color>
+    <color name="usersDark">#89862b</color>
+
+    <color name="tasks">#1E88E5</color>
+    <color name="tasksDark">#196eb9</color>
+
+    <color name="inbox">#37474F</color>
+    <color name="inboxDark">#1e272b</color>
+
+</resources>

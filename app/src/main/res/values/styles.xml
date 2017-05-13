@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeNotification">
+        <item name="colorPrimary">@color/notification</item>
+        <item name="colorPrimaryDark">@color/notificationDark</item>
+    </style>
+
+    <style name="ThemeProject">
+        <item name="colorPrimary">@color/projects</item>
+        <item name="colorPrimaryDark">@color/projectsDark</item>
+    </style>
+
+    <style name="ThemeUsers">
+        <item name="colorPrimary">@color/users</item>
+        <item name="colorPrimaryDark">@color/usersDark</item>
+    </style>
+
+    <style name="ThemeTasks">
+        <item name="colorPrimary">@color/tasks</item>
+        <item name="colorPrimaryDark">@color/tasksDark</item>
+    </style>
+
+    <style name="ThemeInbox">
+        <item name="colorPrimary">@color/inbox</item>
+        <item name="colorPrimaryDark">@color/inboxDark</item>
+    </style>
+
+</resources>

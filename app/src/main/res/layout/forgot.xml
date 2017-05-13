@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:verticalScrollbarPosition="defaultPosition">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundforgot"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6284c7c"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></RelativeLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:id="@+id/logoforgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/q1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoforgot"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvforgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+
+            android:id="@+id/massage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Please enter Your E-mail address and we'll help you with this "
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxforgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:layout_below="@+id/forgot"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="E-mail"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#66ffffff"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/etchangeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardforget"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#1061ee"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Send Reset Code"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

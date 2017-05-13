@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/dashboard2"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:background="@color/semiBlue">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:id="@+id/ivnotification"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:materialIcon="bell"
+                        app:materialIconColor="@color/semiGreen"
+                        app:materialIconSize="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvnotification"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivnotification"
+                        android:layout_gravity="center"
+                        android:text="Notification"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:id="@+id/ivuser"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:materialIcon="human_child"
+                        app:materialIconColor="@color/semiYellow"
+                        app:materialIconSize="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvuser"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Users"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:id="@+id/ivinbox"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:materialIcon="email_open_outline"
+                        app:materialIconColor="@color/semiGray"
+                        app:materialIconSize="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvinbox"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Inbox"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:weightSum="3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:id="@+id/ivproject"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:materialIcon="dropbox"
+                        app:materialIconColor="@color/semiRed"
+                        app:materialIconSize="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvproject"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Projects"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:id="@+id/ivtask"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:materialIcon="view_list"
+                        app:materialIconColor="@color/semiBlue1"
+                        app:materialIconSize="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvtask"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tasks"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

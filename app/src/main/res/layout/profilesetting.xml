@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#cc111433">
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/boxprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/project_mng"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            app:civ_fill_color="@color/white" />
+
+        <TextView
+            android:id="@+id/editprofilepic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Change Profile Photo"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_below="@+id/boxprofile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#66ffffff"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/changename"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#66ffffff"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/changeusername"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_below="@+id/boxname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="PRIVATE INFORMATION "
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#66ffffff"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/changeemail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#66ffffff"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/changenumber"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:hint="Number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#66ffffff"
+            app:cardCornerRadius="20dp"
+            >
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/savebutton"
+    android:text="save"
+    android:background="@null"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    />
+</android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
